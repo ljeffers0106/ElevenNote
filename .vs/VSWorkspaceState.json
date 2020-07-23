@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ElevenNote.Data",
+    "\\ElevenNote.WebAPI",
+    "\\ElevenNote.WebAPI\\App_Start"
+  ],
+  "SelectedNode": "\\ElevenNote.Data\\Note.cs",
+  "PreviewInSolutionExplorer": false
+}
