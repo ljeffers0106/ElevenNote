@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,5 +21,10 @@ namespace ElevenNote.Data
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
+        // This is where I added Category
+        public int? CategoryId { get; set; }
+        [ForeignKey(nameof(CategoryId))]
+        // refers to whole not (all properties) below
+        public virtual Category Category { get; set; }
     }
 }
